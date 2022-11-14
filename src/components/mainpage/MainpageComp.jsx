@@ -2,7 +2,8 @@ import "./mainpagecomp.scss"
 
 const MainpageComp = () => {
   return (
-    <div>MainpageComp</div>
+    <div className="as">MainpageComp</div>
+    
   )
 }
 

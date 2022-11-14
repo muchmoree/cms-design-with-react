@@ -6,7 +6,7 @@ import "./mainpage.scss"
 const Mainpage = () => {
   return (
     <>
-    <div>
+    <div className="container-mainpage">
         <Navbar/>
         <MainpageComp/>
         <Footer/>

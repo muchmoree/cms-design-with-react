@@ -10,26 +10,28 @@ const Navbar = () => {
         <div className="navbar-content">
             <ul>
                 <li>
-                    <a href="#">Mainpage</a>
+                    <a href="/">Mainpage</a>
                 </li>
                 <li>
-                    <a href="#">Product</a>
+                    <a href="/">Product</a>
                 </li>
                 <li>
-                    <a href="#">Pricing</a>
+                    <a href="/">Pricing</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="/">Blog</a>
                 </li>
             </ul>
         </div>
         <div className="navbar-user">
             <button className="user-login">Login</button>
             <button className="user-register">Signup</button>
-            <a href="#">Dashboard</a>
+            <a href="/">Dashboard</a>
         </div>
     </div>
   )
 }
 
 export default Navbar
+
+
