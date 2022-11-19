@@ -1,0 +1,319 @@
+.container-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 900px;
+    height: calc(100% - 110px);
+
+    h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        font-size: 2.625rem;
+        margin-top: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 57px;
+        color: #000000;
+        margin-top: 1.4rem;
+
+        &::after {
+
+            content: '';
+            min-width: 80%;
+            width: 100%;
+            color: #000000;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            margin-top: 30px;
+            height: 1px;
+        }
+
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+        min-width: 80%;
+        margin: auto;
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            .brand {
+                display: flex;
+                align-items: center;
+                flex: auto;
+
+                span {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 19px;
+                    color: #000000;
+                    margin-right: 0.4rem;
+
+                }
+
+                select {
+                    text-align: center;
+                    width: 100px;
+                    height: 30px;
+                    background: #EAEBFF;
+                    border-radius: 4px;
+                }
+
+            }
+
+            .price {
+
+                display: flex;
+                align-items: center;
+                flex: auto;
+
+                .pricespan {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 19px;
+                    color: #000000;
+                    margin-right: 0.4rem;
+
+                }
+
+                input {
+                    width: 100px;
+                    height: 30px;
+                    border: none;
+                    background: #FFFFFF;
+                    border-radius: 4px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 16px;
+
+
+                    &::placeholder {
+                        text-align: center;
+                        font-size: 0.8rem;
+                        color: #BCBABA;
+
+                    }
+                }
+
+                span {
+                    margin: 0 5px;
+                }
+
+            }
+
+            .guarantee {
+                display: flex;
+                align-items: center;
+                flex: auto;
+
+                span {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 19px;
+                    color: #000000;
+                    margin-right: 0.4rem;
+
+                }
+
+                input {
+
+                    width: 20px;
+                    height: 20px;
+                    color: #BCBABA;
+
+                }
+
+                label {
+
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    line-height: 19px;
+                    color: #000000;
+
+                }
+
+            }
+
+            a {
+
+                padding: 0.8rem 1.875rem;
+                background: #1A4ED6;
+                border-radius: 5px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 16px;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+            .space {
+
+                flex-grow: 10;
+            }
+
+            .sort {
+                display: flex;
+                align-items: center;
+
+                span {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 19px;
+                    color: #000000;
+                    margin-right: 0.4rem;
+
+                }
+
+                select {
+                    text-align: center;
+                    width: 100px;
+                    height: 30px;
+                    background: #EAEBFF;
+                    border-radius: 4px;
+                }
+
+            }
+
+        }
+
+        .result {
+            margin-top: 1.875rem;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.1rem;
+            line-height: 22px;
+            color: #000000;
+        }
+
+    }
+
+    .cards {
+
+        margin: 8px 0 0 0;
+        width: 80%;
+        height: 100%;
+        min-width: 900px;
+        display: flex;
+        align-items: center;
+        column-gap: 40px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            padding: 0.6rem;
+            margin-bottom: 50px;
+            width: 20%;
+            height: 100%;
+            cursor: pointer;
+
+            &:hover{
+
+                transition: .3s all ease-in-out;
+                transform: scale(1.15);
+
+            }
+
+            img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+
+            .info {
+
+                text-overflow: ellipsis;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                margin-top: 10px;
+
+                .infoname {
+
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 22px;
+                    color: #000000;
+                }
+
+                .bidprice {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    margin-top: 10px;
+                    
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        object-fit:cover;
+                    }
+
+                    span {
+                        margin-left: 4px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 19px;
+                        color: #000000;
+                    }
+
+                    s {
+                        position: absolute;
+                        left: 62px;
+                        bottom: 12px;
+                        margin-left: 4px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.8rem;
+                        line-height: 14px;
+                        color: #000000;
+                    }
+                }
+
+            }
+
+            .rate {
+                display: flex;
+                position: relative;
+                margin-top: 8px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    object-fit: cover;
+                }
+
+                .circle {
+                    display: flex;
+                    position: absolute;
+                    right: 0;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 20px;
+                    
+                }
+
+            }
+
+        }
+    }
+}

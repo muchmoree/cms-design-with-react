@@ -16,7 +16,7 @@ const Footer = () => {
                 <a href="/">Mainpage</a>
               </li>
               <li>
-                <a href="/">Blog</a>
+                <a href="/blog">Blog</a>
               </li>
               <li>
                 <a href="/">Help</a>
@@ -26,10 +26,10 @@ const Footer = () => {
           <div className="footer-content-down">
             <ul>
               <li>
-                <a href="/">Products</a>
+                <a href="/product">Products</a>
               </li>
               <li>
-                <a href="/">Pricing</a>
+                <a href="/pricing">Pricing</a>
               </li>
               <li>
                 <a href="/">Privacy Policy</a>

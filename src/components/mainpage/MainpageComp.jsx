@@ -54,7 +54,7 @@ const MainpageComp = () => {
             <div className="profile-image">
               <img src={Elsa} alt="" />
             </div>
-            <h5>Jessica Stein</h5>
+            <h5>Elsa Khalifa</h5>
             <h6>Prf. Administrative Assistant</h6>
             <div className="social-icons">
               <i class='bx bxl-instagram bx-sm'></i>
@@ -65,7 +65,7 @@ const MainpageComp = () => {
             <div className="profile-image">
               <img src={Tori} alt="" />
             </div>
-            <h5>Jessica Stein</h5>
+            <h5>Tori Crowford</h5>
             <h6>Prf. Administrative Assistant</h6>
             <div className="social-icons">
               <i class='bx bxl-instagram bx-sm'></i>
