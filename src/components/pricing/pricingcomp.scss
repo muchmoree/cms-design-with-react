@@ -1,0 +1,158 @@
+.container-pricing {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 80%;
+    min-width: 900px;
+    height: calc(100% - 110px);
+
+    .toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 1.125rem;
+        width: 300px;
+        height: 50px;
+        background-color: rgb(#000000, 0.1);
+        border-radius: 25px;
+
+        input {
+            display: none;
+
+            &:checked+label {
+                background: #ffffff;
+                transition: .2s all ease-in;
+            }
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 140px;
+            height: 40px;
+            background: transparent;
+            border-radius: 20px;
+
+        }
+    }
+
+    .content-pricing {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+        align-self: stretch;
+        justify-items: center;
+        margin: 30px 0 60px 0;
+        row-gap: 40px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 16px;
+            padding: 60px 80px;
+            height: 480px;
+
+            .card-type {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.125rem;
+                line-height: 25px;
+                color: #000000;
+            }
+
+            .card-type-pack {
+                margin-top: 6px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.875rem;
+                line-height: 41px;
+                color: #000000;
+            }
+
+            .price {
+                display: flex;
+                margin-top: 12px;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .package-price {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.9rem;
+                    line-height: 44px;
+                    color: #000000;
+                }
+
+                .period {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 0.65rem;
+                    line-height: 16px;
+                    color: #000000;
+
+                }
+            }
+
+            .specification {
+                display: flex;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                
+                ul {
+                    margin: 50px 0;
+                    line-height: 2rem;
+                    width: 260px;
+
+                    li {
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 1rem;
+                        color: #000000;
+
+                    }
+                }
+            }
+
+            button {
+                position: absolute;
+                bottom: -28px;
+                padding: 20px 75px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 22px;
+                color: #000000;
+                background: #FFFFFF;
+                border: 1px solid #000000;
+                border-radius: 10px;
+                cursor: pointer;
+
+                &:hover{
+                    background: #e3edff;
+                    transition: .1s all ease-in;
+                }
+
+            }
+            .middlebtn{
+                background-color: #EAE2FF;
+
+                &:hover{
+                    background: #cbbdf0;
+                }
+            }
+        }
+    }
+}

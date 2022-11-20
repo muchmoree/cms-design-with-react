@@ -1,5 +1,5 @@
 import "./productcomp.scss"
-import Product from "../../assets/product.png"
+import Pageheaderscomp from "../headers/Pageheaderscomp"
 import Star from "../../assets/productstar.png"
 import Dollar from "../../assets/dollar.png"
 
@@ -57,8 +57,9 @@ const Productcomp = () => {
 ]
 
   return (
+
     <div className="container-product">
-      <h2>Products</h2>
+      <Pageheaderscomp title = "Products"/>
       <div className="filter">
         <form >
           <div className="brand">
@@ -81,7 +82,7 @@ const Productcomp = () => {
           </div>
           <div className="guarantee">
             <span>Guarantee:</span>
-            <input type="checkbox" name="Yes" id="yes" checked/>
+            <input type="checkbox" name="Yes" id="yes" defaultChecked/>
             <label htmlFor="yes">Yes</label>
             <input type="checkbox" name="No"  id="no"/>
             <label htmlFor="no">No</label>
@@ -100,8 +101,8 @@ const Productcomp = () => {
         <span className="result">Result: {dummyData.length}</span>
       </div>
       <div className="cards">
-        {dummyData.map((item)=>(
-          <div className="card">
+        {dummyData.map((item,key)=>(
+          <div className="card" key={key}>
             <img src={item.picture} alt="" />
             <div className="info">
               <span className="infoname">{item.name}</span>
@@ -111,7 +112,7 @@ const Productcomp = () => {
                 <s>{item.oldPrice}</s>
               </div>
               <div className="rate">
-                {[...Array(item.rate)].map((e) => <img src={Star} alt="" />)}
+                {[...Array(item.rate)].map((e,key) => <img src={Star} alt=""  key={key}/>)}
                 <div className="circle" style={{backgroundColor:`${item.code}`}}></div>
               </div>
             </div>

@@ -44,12 +44,12 @@ const Footer = () => {
           </div>
           <div className="footer-icons">
             <a href="/">
-              <i class='bx bxl-instagram bx-md'></i>
+              <i className='bx bxl-instagram bx-md'></i>
             </a>
-           <a href="/"><i class='bx bxl-facebook-square bx-md' ></i></a>
-           <a href="/"><i class='bx bxl-reddit bx-md' ></i></a>
-           <a href="/"><i class='bx bxl-twitter bx-md' ></i></a>
-           <a href="/"><i class='bx bxl-youtube bx-md' ></i></a>
+           <a href="/"><i className='bx bxl-facebook-square bx-md' ></i></a>
+           <a href="/"><i className='bx bxl-reddit bx-md' ></i></a>
+           <a href="/"><i className='bx bxl-twitter bx-md' ></i></a>
+           <a href="/"><i className='bx bxl-youtube bx-md' ></i></a>
           </div>
         </div>
       </div>

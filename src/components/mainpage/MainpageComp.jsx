@@ -1,5 +1,4 @@
 import "./mainpagecomp.scss"
-import Header from "../../assets/mpheader.png"
 import Main from "../../assets/sectionvr.png"
 import Jessica from "../../assets/teamfirst.png"
 import Elsa from "../../assets/teamsecond.png"
@@ -23,7 +22,7 @@ const MainpageComp = () => {
               adipiscing elit Ut et.</p>
             <div className="btn">
               <button>
-                Mainpage<i class='bx bx-chevron-down bx-sm'></i>
+                Mainpage<i className='bx bx-chevron-down bx-sm'></i>
               </button>
             </div>
           </div>
@@ -46,8 +45,8 @@ const MainpageComp = () => {
             <h5>Jessica Stein</h5>
             <h6>Prf. Administrative Assistant</h6>
             <div className="social-icons">
-              <i class='bx bxl-instagram bx-sm'></i>
-              <i class='bx bxl-linkedin-square bx-sm' ></i>
+              <i className='bx bxl-instagram bx-sm'></i>
+              <i className='bx bxl-linkedin-square bx-sm' ></i>
             </div>
           </div>
           <div className="card">
@@ -57,8 +56,8 @@ const MainpageComp = () => {
             <h5>Elsa Khalifa</h5>
             <h6>Prf. Administrative Assistant</h6>
             <div className="social-icons">
-              <i class='bx bxl-instagram bx-sm'></i>
-              <i class='bx bxl-linkedin-square bx-sm' ></i>
+              <i className='bx bxl-instagram bx-sm'></i>
+              <i className='bx bxl-linkedin-square bx-sm' ></i>
             </div>
           </div>
           <div className="card">
@@ -68,8 +67,8 @@ const MainpageComp = () => {
             <h5>Tori Crowford</h5>
             <h6>Prf. Administrative Assistant</h6>
             <div className="social-icons">
-              <i class='bx bxl-instagram bx-sm'></i>
-              <i class='bx bxl-linkedin-square bx-sm' ></i>
+              <i className='bx bxl-instagram bx-sm'></i>
+              <i className='bx bxl-linkedin-square bx-sm' ></i>
             </div>
           </div>
         </div>

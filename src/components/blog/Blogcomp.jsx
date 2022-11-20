@@ -2,7 +2,7 @@ import "./blogcomp.scss"
 
 const Blogcomp = () => {
   return (
-    <div>Blogcomp</div>
+    <div className="container-blog">Blogcomp</div>
   )
 }
 
