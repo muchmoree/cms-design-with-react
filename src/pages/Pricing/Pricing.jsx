@@ -6,7 +6,7 @@ import "./pricing.scss"
 const Pricing = () => {
   return (
     <>
-    <div className="container-pricing">
+    <div className="container-price">
         <Navbar/>
         <Pricingcomp/>
         <Footer/>

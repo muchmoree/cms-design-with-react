@@ -2,30 +2,55 @@ import "./pricingcomp.scss"
 import Pageheaderscomp from "../headers/Pageheaderscomp"
 import Dollar from "../../assets/dollar.png"
 import { useState } from "react"
+import Pricingpopup from "../popups/pages/Pricingpopup"
 
 const Pricingcomp = () => {
 
-  let newPrices = ['49.99', '60.99', '81.99']
+  let newPrices = [49.99, 60.99, 81.99]
+  let oldPrices = [19.99, 20.99, 51.99]
+  let titles = ["Beginner","Medium","Large"]
 
-  const [firstprice , setFirstPrice] = useState(['19.99', '20.99', '51.99']);
-
+  const [firstprice , setFirstPrice] = useState(oldPrices);
   const [date, setDate] = useState("mo")
 
-  const handleAnnualPrice = () =>{
+  const [popup,setPopup] = useState(false);
+  const [reference,setReference] = useState();
 
+  const [title,setTitle] = useState(titles)
+
+  const handleAnnualPrice = () =>{
     setFirstPrice(newPrices)
     setDate("yo")
   }
 
   const handleMonthlyPrice = () => {
-
-    setFirstPrice(['19.99 $', '20.99 $', '21.99 $'])
+    setFirstPrice([19.99 , 20.99 , 51.99 ])
     setDate("mo")
   }
+
+  const handlePopupFirst = () =>{
+    setPopup(!popup)
+    setReference(firstprice[0])
+    setTitle(titles[0])
+
+  } 
+  const handlePopupSecond = () =>{
+    setPopup(!popup)  
+    setReference(firstprice[1]) 
+    setTitle(titles[1])
+  } 
+  const handlePopupThird = () =>{
+    setPopup(!popup)  
+    setReference(firstprice[2])
+    setTitle(titles[2])
+  } 
+
 
 
   return (
     <div className="container-pricing">
+      {popup && <Pricingpopup title = {title} reference={reference} 
+      onOpen = {popup} onClose = {()=>setPopup(false)}/>}
       <Pageheaderscomp  title= "Pricing"/>
       <div className="toggle">
         <input type="radio" name="pr" id="month" defaultChecked/>
@@ -51,7 +76,7 @@ const Pricingcomp = () => {
               <li>Lorem ipsum Dolor Dolor as</li>
             </ul>
           </div>
-          <button>Get Started</button>
+          <button className="btn1" onClick={handlePopupFirst} >Get Started</button>
         </div>
         <div className="card">
           <span className="card-type">Medium</span>
@@ -70,7 +95,7 @@ const Pricingcomp = () => {
               <li>Lorem ipsum Dolor</li>
             </ul>
           </div>
-          <button className="middlebtn" >Get Started</button>
+          <button onClick={handlePopupSecond} className="middlebtn" >Get Started</button>
         </div>
         <div className="card">
           <span className="card-type">Large</span>
@@ -89,7 +114,7 @@ const Pricingcomp = () => {
               <li>Lorem ipsum Dolor</li>
             </ul>
           </div>
-          <button>Get Started</button>
+          <button onClick={handlePopupThird}>Get Started</button>
         </div>
       </div>
 
